@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="theme-color" content="#e97d00" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Kaya's">
+  <meta name="application-name" content="Kaya's">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Kaya's Health Care" />
+  <meta name="keywords" content="health care, products, wellness, kaya's" />
+  <meta name="description" content="Kaya's Health Care - quality health products and services." />
+  <meta property="og:title" content="Kaya's - Health Care Store" />
+  <meta property="og:description" content="Discover Kaya's quality health care products." />
+  <meta property="og:image" content="https://www.kayas.co.in/logo.JPG" />
+  <meta name="twitter:image" content="https://www.kayas.co.in/logo.JPG" />  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kaya's - Health Care Store" />
+  <meta property="og:locale" content="en_IN" />
+  <meta name="twitter:description" content="Discover Kaya's quality health care products." />
+  <link rel="canonical" href="https://www.kayas.co.in/" />
+  <link rel="apple-touch-icon" href="logo.JPG" />
+  <link rel="icon" type="image/png" href="logo.JPG" />
+  <link rel="shortcut icon" href="logo.JPG" type="image/png" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>  
+  <link rel="preload" href="css/orignal.file.css" as="style" onload="this.onload=null;this.rel='stylesheet';" />
+  <noscript><link rel="stylesheet" href="css/orignal.file.css"></noscript>  
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';" crossorigin="anonymous"/>
+  <script  src="js/script.js" defer></script>
+  <title>Kaya's Health Care | Natural Wellness Products & Herbal Remedies in India</title>   
+</head>
+<body>
+<header>
+  <nav id="navbar" class="navbar">
+    <div class="logo-container">
+      <a href="index.html" class="logo-link">
+        <img src="logo.JPG" width="70" height="70" alt="Kaya Health Care Logo" loading="lazy" class="logo" />
+      </a>      
+    </div>
+    <div class="nav-content" id="navContent">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About&nbsp;Us</a></li>
+          <li><a href="https://stcourier.com/track/shipment" target="_blank" rel="noopener noreferrer">Order&nbsp;Tracking</a></li>
+        </ul>
+    </div>
+  </nav>    
+</header>
+<button id="cartBtn" class="cart-toggle" aria-controls="cartDrawer" aria-expanded="false" aria-label="Toggle cart drawer">
+    <i class="fas fa-shopping-cart"></i>
+    <span id="cartCount" aria-live="polite">0</span>
+  </button>  
+<aside class="cart-drawer" id="cartDrawer">
+    <h2>Your Cart</h2>
+    <div id="cartItems" class="cart-items"></div>
+    <button id="checkoutBtn" class="checkout-btn">Checkout</button>
+    <button id="clearCartBtn">Clear Cart</button>
+</aside>
+<main id="main">
+  <section class="hero-slideshow">
+  <div class="slide active" style="background-image: url('images/slide1.jpg');"></div>
+  <div class="slide" style="background-image: url('images/slide2.jpg');"></div>
+  <div class="slide" style="background-image: url('images/slide3.jpg');"></div>
+
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <h1>Welcome to Kaya's</h1>
+    <p>
+      At Kaya’s, we bring you nature’s purest treats - rooted in heritage and crafted with care
+      for everyday enjoyment - just the way nature intended.
+    </p>
+    <a href="#shop1" class="hero-btn">Shop Now</a>
+
+    <div class="social-caption">Follow us On !</div>
+    <div class="social-links">
+      <a href="https://www.youtube.com/@KayaConsultingServices" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/kayas_healthy_life/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/KayasHealthyLife/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    </div>
+  </div>
+</section> 
+  <div class="search-filter-container" id="shop1">
+    <label for="categoryFilter">Filter by Category:</label>
+    <select id="categoryFilter" name="category">
+    <option value="all">All Categories</option>
+    <option value="Health Care">Health Care</option>
+    <option value="Hair Care">Hair care</option>
+    <option value="Home Care">Home Care</option>
+  </select>
+<input type="text" id="searchInput" placeholder="Search products..." aria-label="Search products" />
+</div>
+<div id="productList" class="product-grid">
+  <noscript>Please enable JavaScript to view products.</noscript>
+</div>
+<div id="quickViewModal" class="quick-view-modal">
+  <div id="quickViewDetails" class="quick-view-content"></div>
+  <button onclick="closeQuickView()">✖</button>
+</div>
+</div>
+<div class="marketplace-scroll-wrapper">
+    <div class="marketplace-bar">
+      <span class="marketplace-label">Kaya's - Healthy Life @</span>
+      <a href="https://www.amazon.in" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Buy Kaya's products on Amazon" loading="lazy"/>
+      </a>
+      <a href="https://www.meesho.com" target="_blank">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZjx5tnc6LizvPXCjD5eo2X7kanrIFfp64mA&s" alt="Buy Kaya's products on Meesho" loading="lazy" />
+      </a>
+      <a href="https://www.facebook.com" target="_blank">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPcl6PoxHcSw-EH5rw_CeA7gu0T1WldyPvsw&s" alt="Buy Kaya's products on Facebook" loading="lazy"/>
+      </a>
+    </div>
+</div>   
+<section class="kayas-features">
+  <div class="feature">
+    <i class="fas fa-check-circle"></i>
+    <h4>High Quality<br>Products</h4>
+  </div>
+  <div class="feature">
+    <i class="fas fa-seedling"></i>
+    <h4>Locally Sourced</h4>
+  </div>
+  <div class="feature">
+    <i class="fas fa-leaf"></i>
+    <h4>Sustainable<br>Packaging</h4>
+  </div>
+  <div class="feature">
+    <i class="fas fa-truck"></i>
+    <h4>Fast Delivery</h4>
+  </div>
+</section>
+<section class="kayas-award-video">
+  <div class="video-wrapper">
+    <iframe width="100%" height="400" lang="en"
+      src="https://www.youtube-nocookie.com/embed/PSAbEW0g0NI" 
+      title="Kaya's YouTube Video"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+      Your browser does not support embedded videos.
+</iframe>
+  </div>
+</section>
+<section class="kayas-instagram-section">
+  <p class="brand-name">Kaya’s - Healthy Life</p>
+  <h2>Follow Us on Instagram</h2>
+  <a href="https://www.instagram.com/kayas_healthy_life/" target="_blank" class="insta-btn">
+    <i class="fab fa-instagram"></i> Instagram
+  </a>
+</section>
+<section class="kayas-reviews" id="reviews">
+  <h2>Customer Reviews</h2>
+  <div class="review-list" id="reviewList"></div>
+</section>
+<div class="certification-section">
+  <div class="cert-badges">
+    <a href="https://services.gst.gov.in" target="_blank" class="cert-badge" aria-label="GST Certificate">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLze-Iumy3eFyI-qBBe4f-E3qpOu2VXyuYvDtkaKINZcUHccpG1G3BDbNwk0Fu_h-YysY&usqp=CAU" alt="GST Logo" style="width: 150px; height: 60px;">
+      <p>GSTIN<br><strong>33DIXPP8037G1ZN</strong></p>
+    </a>
+
+    <a href="https://foodlicensing.fssai.gov.in" target="_blank" class="cert-badge" aria-label="FSSAI Certificate">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWt22M2qy9HKB8SA-aNOZFQ7gA1vWhEbe7fQ&s" alt="FSSAI Logo" style="width: 150px;">
+      <p>FSSAI<br><strong>22424554000182</strong></p>
+    </a>
+
+    <a href="https://udyamregistration.gov.in" target="_blank" class="cert-badge" aria-label="MSME Certificate">
+      <img src="https://4.imimg.com/data4/AC/PH/ANDROID-14909429/product-500x500.jpeg" alt="MSME Logo">
+      <p>Udyam<br><strong>UDYAM-TN-03-0231670</strong></p>
+    </a>
+  </div>
+</div>
+<section id="google-review" class="google-review-section">
+  <div class="review-container">
+    <h2 class="review-heading">We Value Your Feedback</h2>
+    <p class="review-text">
+      Your experience matters! Help us grow and improve by leaving a review on Google.
+    </p>
+    <a href="https://g.page/r/Cb32t6qOAJf0EAE/review" 
+   target="_blank" 
+   rel="noopener noreferrer">
+  <button class="review-button">
+    ⭐ Leave a Google Review
+  </button>
+</a>
+  </div>
+</section>
+<!-- 💬 Coupon Modal -->
+<div id="couponModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span class="close" onclick="closeCouponModal()">×</span>
+    <h3>Available Coupons</h3>
+    <div id="couponModalContent"></div>
+  </div>
+</div>
+</main>
+<footer class="kayas-footer">
+  <div class="footer-top">
+    <div class="footer-logo-social">
+      <h2 class="logo">Kaya's</h2>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/kayas_healthy_life/" aria-label="Kaya's Instagram Page">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/KayasHealthyLife" aria-label="Kaya's Facebook Page">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://wa.me/919003031324" aria-label="Kaya's whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/kayas" aria-label="Kaya's linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+      <div class="footer-phone">
+        <i class="fas fa-phone"></i> +91 9003031324
+      </div>
+    </div>
+    <div class="footer-columns">
+      <div>
+        <a href="about.html"><h4>About Us</h4></a>
+        <p>Kaya’s, is dedicated to providing you with the purest and most nourishing products to support your overall well-being. We believe that true health begins with what you consume, and all our range of products is a testament to our commitment to your wellness.</p>
+        
+      </div>
+      <div>
+        <h4>Policies</h4>
+        <a href="blog.html">Blog</a><br>
+        <a href="Privacy.html">Privacy Policy</a><br>
+        <a href="Cancellation.html">Cancellation Policy</a><br>
+        <a href="Shipping.html">Shipping Policy</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Phone: (+91) 9003031324</p>
+        <p>Email: <a href="mailto:admin@kayas.co.in">admin@kayas.co.in</a></p>
+      </div>
+      <div>
+  <h4>Kaya's Location</h4>
+  <div class="footer-map">
+    <iframe
+      src="https://www.google.com/maps?q=11.0203889,76.8981389&output=embed"
+      width="100%"
+      height="180"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 – Kaya’s | Designed & Developed by <strong>ZterTech</strong></p>
+  </div>
+  <a href="https://wa.me/919003031324?text=Need%20Product%20Info%3F%20Talk%20to%20us" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp for product information">
+    <i class="fab fa-whatsapp"></i>
+    <span>Need Product Info ? Talk to us</span>
+  </a>
+</footer>
+</body>
+</html>

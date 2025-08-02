@@ -1,0 +1,73 @@
+/* Base Section */
+#cancellation-policy {
+  background-color: #f8f9fa;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Grid Layout */
+.policy-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Left Image */
+.policy-image {
+  flex: 1 1 45%;
+  text-align: center;
+}
+.policy-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Text */
+.policy-content {
+  flex: 1 1 50%;
+}
+.policy-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #333;
+}
+.policy-content ul {
+  list-style: none;
+  padding: 0;
+}
+.policy-content li {
+  background: #fff;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  border-left: 4px solid #007102;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  font-size: 16px;
+  line-height: 1.6;
+}
+.policy-content li strong {
+  color: #0c8c00;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .policy-container {
+    flex-direction: column;
+    text-align: left;
+  }
+  .policy-content h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .policy-content li {
+    font-size: 15px;
+  }
+}
