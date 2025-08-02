@@ -516,7 +516,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const seoData = {
     title: "Kaya - Health Care Store",
     description: "Discover Kaya's quality health care products made with natural ingredients.",
-    image: "https://www.kayas.co.in/logo.JPG",
+    image: "https://www.kayas.co.in/logo.jpg",
     url: "https://www.kayas.co.in/",
     siteName: "Kaya Health Care",
     twitterHandle: "@kayahealthcare"
